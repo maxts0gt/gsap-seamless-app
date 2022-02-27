@@ -91,6 +91,30 @@ section p {
   margin: 32px 0 0 0;
 }
 
+section a {
+  background-color: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+}
+
+section a img {
+  margin: 0 0 0 8px;
+  width: 10px;
+  height: 16px;
+  object-fit: cover;
+  object-position: center right;
+  transition: width 0.25s;
+}
+
+section a:hover img {
+  width: 25px;
+}
+
 section.alternative div.split:first-child {
   grid-column: 2;
 }
