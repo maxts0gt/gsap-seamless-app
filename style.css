@@ -55,6 +55,7 @@ section div.split {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 section div.split:first-child {
