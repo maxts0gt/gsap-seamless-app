@@ -11,24 +11,29 @@ slides.forEach((slide) => {
     image.style.zIndex = z
   })
 
-  const timeline = gsap.timeline()
+  gsap.set(images, { opacity: 0 })
 
-  timeline
-    .set(images, {
-      x: () => {
-        return 500 * Math.random() - 250
-      },
-      y: '500%',
-      rotation: () => {
-        return 90 * Math.random() - 45
-      }
-    })
-    .to(images, { x: 0, y: 0, stagger: -0.25 })
-    .to(images, {
-      rotation: () => {
-        return 16 * Math.random() - 8
-      }
-    })
+  imagesLoaded(images, () => {
+    const timeline = gsap.timeline()
+
+    timeline
+      .set(images, {
+        x: () => {
+          return 500 * Math.random() - 250
+        },
+        y: '500%',
+        rotation: () => {
+          return 90 * Math.random() - 45
+        },
+        opacity: 1
+      })
+      .to(images, { x: 0, y: 0, stagger: -0.25 })
+      .to(images, {
+        rotation: () => {
+          return 16 * Math.random() - 8
+        }
+      })
+  })
 
   slide.addEventListener('click', function (e) {
     z--
