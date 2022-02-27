@@ -7,7 +7,7 @@ body {
   font-family: PT Root;
   font-size: 16px;
   line-height: 1.5;
-
+  font-weight: 200;
   background-color: #000;
   color: #fff;
   /* margin: 40px auto 40px auto;
@@ -21,9 +21,28 @@ h1 {
 
 header {
   position: fixed;
-  top: 24px;
-  left: 24px;
-  z-index: 1000000000;
+  top: 12px;
+  left: 0px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10000000001;
+}
+
+header h1,
+header h2 {
+  display: flex;
+  margin: 0;
+  font-family: PT Root;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+h1 span,
+h2 span {
+  background-color: red;
+  width: 400px;
+  flex: 0 0 auto;
+  display: inline-block;
 }
 
 section {
