@@ -23,7 +23,7 @@ header {
   position: fixed;
   top: 24px;
   left: 24px;
-  z-index: 1;
+  z-index: 1000000000;
 }
 
 section {
