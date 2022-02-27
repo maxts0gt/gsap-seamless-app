@@ -23,6 +23,7 @@ header {
   position: fixed;
   top: 24px;
   left: 24px;
+  z-index: 1;
 }
 
 section {
@@ -42,6 +43,15 @@ section div.split:first-child {
 }
 
 section div.slides {
+  width: 500px;
+  height: 750px;
+  position: relative;
+}
+
+section div.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 500px;
   height: 750px;
 }
