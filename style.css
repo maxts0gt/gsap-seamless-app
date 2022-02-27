@@ -67,6 +67,7 @@ section div.slides {
   width: 500px;
   height: 750px;
   position: relative;
+  perspective: 800px;
 }
 
 section div.slides img {

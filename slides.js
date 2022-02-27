@@ -53,14 +53,18 @@ slides.forEach((slide) => {
       .set(currentImage, { x: 0 })
       .to(currentImage, {
         x: direction,
-        rotation: midAngle
+        rotation: midAngle,
+        rotationY: 20,
+        scale: 1.1
       })
       .set(currentImage, { zIndex: z })
       .to(currentImage, {
         x: 0,
         rotation: () => {
           return 16 * Math.random() - 8
-        }
+        },
+        rotationY: 0,
+        scale: 1
       })
 
     current++
